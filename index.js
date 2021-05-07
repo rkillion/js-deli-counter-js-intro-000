@@ -7,6 +7,7 @@ var nowServing = (thisLine) => {
   var howMany = thisLine.length;
   var person = thisLine.shift();
   function innerFunction() {howMany === 0 ? "There is nobody waiting to be served." : `Currently serving ${person}.`;}
+  innerFunction();
   //if (howMany === 0 ) {
     //return "There is nobody waiting to be served!";
   //} else {
