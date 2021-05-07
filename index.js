@@ -20,7 +20,7 @@ var phrase = "The line is currently: ";
     return "The line is currently empty.";
   } else {
   for (let i=0;i<nowLine.length;i++) {
-    phrase = phrase + [i+1] + "." + nowLine[i] + i===nowLine.length-1 ? "" : ", ";
+    phrase = phrase + (i+1) + "." + nowLine[i] + i===nowLine.length-1 ? "" : ", ";
   }
   return phrase;
 }
