@@ -6,10 +6,19 @@ function takeANumber(currentLine,newPerson) {
 var nowServing = (thisLine) => {
   var howMany = thisLine.length;
   var person = thisLine.shift();
-  return howMany === 0 ? "There is nobody waiting to be served!" : `Currently serving ${person}.`; //why doesn't this work??
+  return howMany === 0 ? "There is nobody waiting to be served!" : `Currently serving ${person}.`;
   //if (howMany === 0 ) {
     //return "There is nobody waiting to be served!";
   //} else {
     //return `Currently serving ${person}.`;
   //}
+}
+
+var currentLine = (nowLine) => {
+  return nowLine.length === 0 ? "The line is currently empty." :
+  var phrase = "The line is currently: ";
+  for (let i=0;i<nowLine.length;i++) {
+    phrase = phrase + [i+1] + "." + nowLine[i] + i===nowLine.length-1 ? "" : ", ";
+  }
+  phrase;
 }
