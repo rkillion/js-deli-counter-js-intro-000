@@ -5,5 +5,5 @@ function takeANumber(currentLine,newPerson) {
 
 var nowServing = (currentLine) => {
   currentLine.length === 0 ? "There is nobody waiting to be served!" :
-  currentLine.shift();
+  return `Currently serving ${currentLine.shift()}.`;
 }
