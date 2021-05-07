@@ -16,9 +16,9 @@ var nowServing = (thisLine) => {
 
 var currentLine = (nowLine) => {
 var phrase = "The line is currently: ";
-  return nowLine.length === 0 ? "The line is currently empty." :
+  nowLine.length === 0 ? return "The line is currently empty." :
   for (let i=0;i<nowLine.length;i++) {
     phrase = phrase + [i+1] + "." + nowLine[i] + i===nowLine.length-1 ? "" : ", ";
   }
-  phrase;
+  return phrase;
 }
