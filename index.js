@@ -6,11 +6,10 @@ function takeANumber(currentLine,newPerson) {
 var nowServing = (thisLine) => {
   var howMany = thisLine.length;
   var person = thisLine.shift();
-  function innerFunction() {howMany === 0 ? "There is nobody waiting to be served." : `Currently serving ${person}.`;}
-  innerFunction();
-  //if (howMany === 0 ) {
-    //return "There is nobody waiting to be served!";
-  //} else {
-    //return `Currently serving ${person}.`;
-  //}
+  //howMany === 0 ? "There is nobody waiting to be served." : `Currently serving ${person}.`; why doesn't this work??
+  if (howMany === 0 ) {
+    return "There is nobody waiting to be served!";
+  } else {
+    return `Currently serving ${person}.`;
+  }
 }
