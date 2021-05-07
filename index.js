@@ -3,8 +3,8 @@ function takeANumber(currentLine,newPerson) {
   return `Welcome, ${newPerson}. You are number ${currentLine.length} in line.`;
 }
 
-var nowServing = (currentLine) => {
-  var howMany = currentLine.length;
+var nowServing = (thisLine) => {
+  var howMany = thisLine.length;
   howMany === 0 ? "There is nobody waiting to be served!" :
-  `Currently serving ${currentLine.shift()}.`;
+  `Currently serving ${thisLine.shift()}.`;
 }
