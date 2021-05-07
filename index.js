@@ -6,7 +6,7 @@ function takeANumber(currentLine,newPerson) {
 var nowServing = (thisLine) => {
   var howMany = thisLine.length;
   var person = thisLine.shift();
-  {howMany === 0 ? "There is nobody waiting to be served." : `Currently serving ${person}.`}
+  howMany === 0 ? "There is nobody waiting to be served." : `Currently serving ${person}.`;
   //if (howMany === 0 ) {
     //return "There is nobody waiting to be served!";
   //} else {
